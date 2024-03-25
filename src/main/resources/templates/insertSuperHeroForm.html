@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="common-styles.css">
+	<title>Super Hero Entry Form</title>
+</head>
+<body>
+	<h2 th:text="${greetMessage}"></h2>
+	<div class="container">
+		<h3>Insert New Super Hero Form</h3>
+		<form id="insertSuperHeroForm" action="" method="POST">
+			<div class="form-group">
+				<label for="name">Name:</label> <input type="text" id="name"
+					name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="humanName">Human Name:</label> <input type="text"
+					id="humanName" name="humanName" required>
+			</div>
+			<div class="form-group">
+				<label for="power">Power(0-100):</label> <input type="range"
+					id="power" name="power" min="0" max="100" value="50">
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
