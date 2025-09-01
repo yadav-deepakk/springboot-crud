@@ -20,12 +20,12 @@ public class SuperHeroController {
 	@GetMapping(path = "/insert-superhero-form")
 	public ModelAndView getInsertSuperHeroForm() {
 		System.out.println("GET: /insert-superhero-form");
-		ModelAndView modeandView = new ModelAndView();
+		ModelAndView modelAndView = new ModelAndView();
 		String viewName = "insertSuperHeroForm";
-		modeandView.setViewName(viewName);
-		modeandView.addObject("greetMessage", "Welcome Deepak");
-		System.out.println(modeandView);
-		return modeandView;
+		modelAndView.setViewName(viewName);
+		modelAndView.addObject("greetMessage", "Welcome Deepak");
+		System.out.println(modelAndView);
+		return modelAndView;
 	}
 	
 	@PostMapping(path = "/post-superhero")
